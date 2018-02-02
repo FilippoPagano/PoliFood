@@ -370,7 +370,7 @@ function initMap() {
       markers.push(marker);
 	    google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
-                infoWindow.setContent('<h1>'+ locations[i][1]+'</h1><h2>'+locations[i][0]+'<\h2><h3>'+locations[i][4]+'</h3>');
+                infoWindow.setContent('<font color="black"><h1>'+ locations[i][1]+'</h1><h2>'+locations[i][0]+'<\h2><h3>'+locations[i][4]+'</h3></font>');
                 infoWindow.open(map, marker);
             }
         })(marker, i));
